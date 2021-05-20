@@ -16,27 +16,6 @@ import Typography from '@material-ui/core/Typography';
 import {withStyles} from "@material-ui/core/styles";
 
 
-const breaches = [
-    {
-        'company': 'Adobe',
-        'date_disclosed': 'October 2013',
-        'date_breached': 'October 2013',
-        'date_discovered': 'October 2013',
-        'date_resolved': 'October 2013',
-        'impact': '153 million user records',
-        'articles': ['https://www.csoonline.com/article/2130877/the-biggest-data-breaches-of-the-21st-century.html']
-    },
-    {
-        'company': 'Adult Finder',
-        'date_disclosed': 'October 2016',
-        'date_breached': 'October 2016',
-        'date_discovered': 'October 2016',
-        'date_resolved': 'October 2016',
-        'impact': '412.2 million accounts',
-        'articles': ['https://www.csoonline.com/article/2130877/the-biggest-data-breaches-of-the-21st-century.html']
-    },
-]
-
 
 class BreachComponent extends React.Component {
     constructor(props) {
@@ -76,21 +55,57 @@ class BreachComponent extends React.Component {
 
 
 class BasicTimeline extends React.Component {
-    state = {
-        searchNodes: ""
-    };
+    constructor(props) {
+        super(props);
+        this.state = {
+            error: null,
+            isLoaded: false,
+            breaches: []
+        };
+    }
+
+    componentDidMount() {
+        fetch("https://raw.githubusercontent.com/sillyfatcat/veda/main/data-breach.json")
+            .then(res => res.json())
+            .then(
+                (result) => {
+                    this.setState({
+                        isLoaded: true,
+                        breaches: result
+                    });
+                },
+                // Note: it's important to handle errors here
+                // instead of a catch() block so that we don't swallow
+                // exceptions from actual bugs in components.
+                (error) => {
+                    this.setState({
+                        isLoaded: true,
+                        error
+                    });
+                }
+            )
+    }
+
 
     render() {
-        return (
-            <Timeline className="centerSmall" align="alternate">
-                {
-                    Object.keys(breaches).map((index) => (
-                        <BreachComponent company={breaches[index]['company']} date={breaches[index]['date_disclosed']}
-                        impact={breaches[index]['impact']}/>
-                    ))
-                }
-            </Timeline>
-        );
+        const {error, isLoaded, items} = this.state;
+        if (error) {
+            return <div>Error: {error.message}</div>;
+        } else if (!isLoaded) {
+            return <div>Loading...</div>;
+        } else {
+            return (
+                <Timeline className="centerSmall" align="alternate">
+                    {
+                        Object.keys(this.state.breaches).map((index) => (
+                            <BreachComponent company={this.state.breaches[index]['company']}
+                                             date={this.state.breaches[index]['date_disclosed']}
+                                             impact={this.state.breaches[index]['impact']}/>
+                        ))
+                    }
+                </Timeline>
+            );
+        }
     }
 }
 
