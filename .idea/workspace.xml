@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="23710bc8-749e-4036-9ea1-46c658947147" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/nadleeh/src/timeline.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nadleeh/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/nadleeh/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nadleeh/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/nadleeh/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nadleeh/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/nadleeh/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nadleeh/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/nadleeh/src/App.js" afterDir="false" />
-    </list>
+    <list default="true" id="23710bc8-749e-4036-9ea1-46c658947147" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -74,7 +67,7 @@
       <workItem from="1621157174054" duration="357000" />
       <workItem from="1621474527914" duration="147000" />
       <workItem from="1621477186000" duration="93000" />
-      <workItem from="1621477648049" duration="8299000" />
+      <workItem from="1621477648049" duration="8558000" />
     </task>
     <servers />
   </component>
