@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/nadleeh/static/css/main.9d5b29c0.chunk.css",
+    "main.js": "/nadleeh/static/js/main.03799e5b.chunk.js",
+    "main.js.map": "/nadleeh/static/js/main.03799e5b.chunk.js.map",
+    "runtime-main.js": "/nadleeh/static/js/runtime-main.2874b1a1.js",
+    "runtime-main.js.map": "/nadleeh/static/js/runtime-main.2874b1a1.js.map",
+    "static/js/2.2f47c728.chunk.js": "/nadleeh/static/js/2.2f47c728.chunk.js",
+    "static/js/2.2f47c728.chunk.js.map": "/nadleeh/static/js/2.2f47c728.chunk.js.map",
+    "static/js/3.cd002ff5.chunk.js": "/nadleeh/static/js/3.cd002ff5.chunk.js",
+    "static/js/3.cd002ff5.chunk.js.map": "/nadleeh/static/js/3.cd002ff5.chunk.js.map",
+    "index.html": "/nadleeh/index.html",
+    "static/css/main.9d5b29c0.chunk.css.map": "/nadleeh/static/css/main.9d5b29c0.chunk.css.map",
+    "static/js/2.2f47c728.chunk.js.LICENSE.txt": "/nadleeh/static/js/2.2f47c728.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/nadleeh/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2874b1a1.js",
+    "static/js/2.2f47c728.chunk.js",
+    "static/css/main.9d5b29c0.chunk.css",
+    "static/js/main.03799e5b.chunk.js"
+  ]
+}
