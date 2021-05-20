@@ -1,6 +1,3 @@
-# nadleeh
-Timeline of all major cyber events contributed by the open source community
-
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
