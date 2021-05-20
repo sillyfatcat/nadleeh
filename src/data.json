@@ -16,5 +16,14 @@
         "date_resolved": "October 2016",
         "impact": "412.2 million accounts",
         "articles": ["https://www.csoonline.com/article/2130877/the-biggest-data-breaches-of-the-21st-century.html"]
+    },
+    {
+        "company": "Canva",
+        "date_disclosed": "May 2019",
+        "date_breached": "May 2019",
+        "date_discovered": "May 2019",
+        "date_resolved": "May 2019",
+        "impact": "137 million user accounts",
+        "articles": ["https://www.csoonline.com/article/2130877/the-biggest-data-breaches-of-the-21st-century.html"]
     }
 ]
