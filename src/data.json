@@ -1,0 +1,20 @@
+[
+    {
+        "company": "Adobe",
+        "date_disclosed": "October 2013",
+        "date_breached": "October 2013",
+        "date_discovered": "October 2013",
+        "date_resolved": "October 2013",
+        "impact": "153 million user records",
+        "articles": ["https://www.csoonline.com/article/2130877/the-biggest-data-breaches-of-the-21st-century.html"]
+    },
+    {
+        "company": "Adult Finder",
+        "date_disclosed": "October 2016",
+        "date_breached": "October 2016",
+        "date_discovered": "October 2016",
+        "date_resolved": "October 2016",
+        "impact": "412.2 million accounts",
+        "articles": ["https://www.csoonline.com/article/2130877/the-biggest-data-breaches-of-the-21st-century.html"]
+    }
+]
